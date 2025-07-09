@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>明神のポートフォリオ</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"/>
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.css" rel="stylesheet">
+
+  <!-- 自分のCSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <h1>明神のポートフォリオ</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="works.html">Works</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wave-top" data-aos="fade-down" data-aos-delay="100"></div>
+
+  <main>
+    <section id="hero" data-aos="fade-up">
+      <h2>ようこそ！</h2>
+      <p>HTML/CSSを中心に、丁寧で誠実なウェブ制作を心がけています。</p>
+    </section>
+
+    <section id="about" data-aos="fade-right" data-aos-delay="200">
+      <h2>About Me</h2>
+      <p>
+        インフラ領域のサーバー改修支援を経験し、<br>
+        コードを書く以上に「お客様とのコミュニケーション」が重要だと学びました。
+      </p>
+    </section>
+
+    <section id="skills" data-aos="fade-left" data-aos-delay="300">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li data-aos="zoom-in" data-aos-delay="400">HTML / CSS</li>
+        <li data-aos="zoom-in" data-aos-delay="500">JavaScript</li>
+        <li data-aos="zoom-in" data-aos-delay="600">WordPress</li>
+        <li data-aos="zoom-in" data-aos-delay="700">Git / GitHub</li>
+      </ul>
+    </section>
+
+    <section id="works" data-aos="fade-up" data-aos-delay="400">
+      <h2>Works</h2>
+      <div class="work-card" data-aos="flip-left" data-aos-delay="500">
+        <h3>Portfolio Site</h3>
+        <p>このサイト自体をコーディング＆デザインしました。</p>
+      </div>
+      <div class="work-card" data-aos="flip-left" data-aos-delay="600">
+        <h3>Server Setup</h3>
+        <p>Nginx＋Docker環境の構築を進行中です。</p>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up" data-aos-delay="500">
+      <h2>Contact</h2>
+      <a href="mailto:myojin.ryo@icloud.com" class="btn">メールで問い合わせる</a>
+    </section>
+  </main>
+
+  <div class="wave-bottom" data-aos="fade-up" data-aos-delay="600"></div>
+
+  <footer data-aos="fade-up" data-aos-delay="700">
+    <p>&copy; 2025 明神</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      mirror: false
+    });
+  </script>
+</body>
+</html>

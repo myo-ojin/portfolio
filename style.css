@@ -1,0 +1,168 @@
+/* === カラー変数 === */
+:root {
+  --main:     #f17633;
+  --sub:      #c0b9ab;
+  --bg:       #e7e1db;
+  --accent:   #294c74;
+  --white:    #ffffff;
+}
+
+/* === リセット & 全体設定 === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--bg);
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--accent);
+  line-height: 1.6;
+}
+
+/* === ヘッダー === */
+header {
+  background: linear-gradient(135deg, var(--main), var(--accent));
+  color: var(--white);
+  text-align: center;
+  padding: 24px 20px;
+}
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+header nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+header nav a:hover,
+header nav a.active {
+  opacity: 0.8;
+}
+
+/* === 波形SVG === */
+.wave-top {
+  height: 80px;
+  margin-bottom: 0;
+  background-color: var(--bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1440 100' xmlns='http://www.w3.org/2000/svg'><path fill='%23e7e1db' d='M0,64L48,74.7C96,85,192,107,288,117.3C384,128,480,128,576,122.7C672,117,768,107,864,101.3C960,96,1056,96,1152,85.3C1248,75,1344,53,1392,42.7L1440,32V0H0Z'/></svg>");
+}
+.wave-bottom {
+  height: 50px;
+  margin-top: 0;
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1440 100' xmlns='http://www.w3.org/2000/svg'><path fill='%23f5f7fa' d='M0,32L48,42.7C96,53,192,75,288,85.3C384,96,480,96,576,90.7C672,85,768,75,864,69.3C960,64,1056,64,1152,53.3C1248,43,1344,21,1392,10.7L1440,0V100H0Z'/></svg>");
+}
+
+/* === メインコンテンツ === */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+#hero {
+  margin-top: 40px;
+  text-align: center;
+}
+#hero h2 {
+  font-size: 2rem;
+  color: var(--main);
+  margin-bottom: 16px;
+}
+#hero p {
+  font-size: 1.1rem;
+}
+
+/* === 共通セクション === */
+main section {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 32px;
+  margin-bottom: 40px;
+}
+
+/* === Contact フォームスタイル === */
+.contact-form {
+  max-width: 480px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+.contact-form input,
+.contact-form textarea {
+  margin-top: 4px;
+  padding: 10px;
+  border: 1px solid var(--sub);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--main);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(241,118,51,0.2);
+}
+.contact-form .btn {
+  justify-self: start;
+}
+.hidden {
+  display: none;
+}
+
+/* === フッター === */
+footer {
+  text-align: center;
+  padding: 24px 0;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+/* === ボタン共通スタイル === */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: var(--main);
+  color: var(--white);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* === レスポンシブ対応 === */
+@media (max-width: 768px) {
+  main section {
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+  .works-list {
+    gap: 16px;
+  }
+  .work-card {
+    width: 100%;
+  }
+}
