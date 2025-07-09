@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Works｜明神</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"/>
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.css" rel="stylesheet">
+
+  <!-- 自サイトCSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <h1>明神のポートフォリオ</h1>
+    <nav>
+      <ul>
+        <li><a href="indexver3.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="works.html" class="active">Works</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wave-top" data-aos="fade-down" data-aos-delay="100"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="works-hero" data-aos="fade-up">
+      <h2>My Works</h2>
+      <p>これまでの制作・構築実績をご紹介します。</p>
+    </section>
+
+    <!-- Works List -->
+    <section class="works-list" data-aos="fade-up" data-aos-delay="200">
+      <!-- Card 1 -->
+      <div class="work-card" data-aos="flip-left" data-aos-delay="300">
+        <img src="スクリーンショット 2025-07-06 153009.png"
+             alt="ポートフォリオサイトのスクリーンショット"/>
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          このポートフォリオサイト本体を制作・コーディングしました。<br>
+          ・HTML/CSS & JavaScript（波形SVG・グラデーション）<br>
+          ・レスポンシブ対応<br>
+          ・Google Fonts（Noto Sans JP）
+        </p>
+        <a href="indexver3.html" class="btn">View Site</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="work-card" data-aos="flip-left" data-aos-delay="400">
+        <img src="images/server-setup.png"
+             alt="サーバー構築イメージ"/>
+        <h3>Server Environment Setup</h3>
+        <p>
+          Ubuntuサーバー上にNginx・Docker環境を構築中です。<br>
+          SSL証明書導入や自動デプロイ環境の構築も予定しています。
+        </p>
+        <a href="#" class="btn disabled">Coming Soon</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" data-aos="fade-up" data-aos-delay="500">
+      <h2>Contact</h2>
+      <a href="mailto:myojin.ryo@icloud.com" class="btn">メールで問い合わせる</a>
+    </section>
+  </main>
+
+  <div class="wave-bottom" data-aos="fade-up" data-aos-delay="600"></div>
+
+  <footer data-aos="fade-up" data-aos-delay="700">
+    <p>&copy; 2025 明神</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      mirror: false
+    });
+  </script>
+</body>
+</html>
