@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>明神 諒｜ポートフォリオ</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"/>
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.css" rel="stylesheet">
+
+  <!-- 共通スタイル -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header data-aos="fade-down">
+    <h1>明神のポートフォリオ</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 下部波形 -->
+  <div class="wave-top" data-aos="fade-down" data-aos-delay="100"></div>
+
+  <main>
+    <!-- Hero セクション -->
+    <section id="hero" data-aos="fade-up">
+      <h2>こんにちは、明神 諒です</h2>
+      <p>インフラエンジニアとフロントエンド見習いを兼業しながら、<br>
+         丁寧なコーディングと柔軟なコミュニケーションで価値を提供します。</p>
+    </section>
+
+    <!-- About Me セクション -->
+    <section id="about" data-aos="fade-up" data-aos-delay="200">
+      <h2>About Me</h2>
+      <p class="profile-summary">
+        HTML/CSSをメインに、WordPressやJavaScriptも扱い、<br>
+        お客様の要望に寄り添ったソリューションを心がけています。
+      </p>
+      <p>
+        趣味はサッカー観戦で、好きなチームが勝つ喜びは納品の達成感にも似ています。<br>
+        現場でのインフラ改修支援を通じて「お客様とのコミュニケーション」の大切さを学び、<br>
+        いつでも主体的に学び続ける姿勢を忘れません。
+      </p>
+    </section>
+
+    <!-- Skills & Tools セクション -->
+    <section id="skills" data-aos="fade-up" data-aos-delay="300">
+      <h2>Skills &amp; Tools</h2>
+      <ul class="skill-list">
+        <li>HTML/CSS (レスポンシブ対応)</li>
+        <li>JavaScript / VBA (独学1年)</li>
+        <li>WordPress カスタマイズ</li>
+        <li>Python (統計分析, 1年学習)</li>
+        <li>AWS・Azure・Linux (3ヶ月実務)</li>
+      </ul>
+    </section>
+
+    <!-- Experience セクション -->
+    <section id="experience" data-aos="fade-up" data-aos-delay="400">
+      <h2>Experience</h2>
+      <ul class="experience-list">
+        <li>2025年4月～：インフラエンジニア（実務3ヶ月）</li>
+        <li>2025年7月～：フリーランスWeb制作開始</li>
+      </ul>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" data-aos="fade-up" data-aos-delay="500">
+      <h2>Contact</h2>
+      <a href="mailto:myojin.ryo@icloud.com" class="btn">メールで問い合わせる</a>
+    </section>
+  </main>
+
+  <!-- 上部波形（フッター前） -->
+  <div class="wave-bottom" data-aos="fade-up" data-aos-delay="600"></div>
+
+  <!-- フッター -->
+  <footer data-aos="fade-up" data-aos-delay="700">
+    <p>&copy; 2025 明神 諒</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      mirror: false
+    });
+  </script>
+
+</body>
+</html>
