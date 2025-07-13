@@ -166,3 +166,12 @@ footer {
     width: 100%;
   }
 }
+
+.work-card img {
+  display: block;     /* ブロック要素化して余白が出ないように */
+  width: 100%;        /* カード幅いっぱいに広げる */
+  max-width: 400px;   /* お好きな上限幅に調整 */
+  height: auto;       /* アスペクト比を保ったまま高さを自動調整 */
+  object-fit: cover;  /* 必要に応じてトリミング（縦横比維持） */
+  margin: 0 auto;     /* カード中央寄せ */
+}
